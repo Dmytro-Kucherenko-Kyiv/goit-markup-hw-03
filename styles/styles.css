@@ -49,18 +49,23 @@ ul {
 
 /*-------------------header-------------------*/
 .container {
-  width: 1600px;
-  padding-left: 215px;
-  padding-right: 215px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   outline: 2px solid red;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-container {
 }
 
 .header-navigation {
-  display: flex;
+  
 }
 
 .logo {
@@ -70,11 +75,11 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196F3;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
-.header-item{
+.header-logo{
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-list {
@@ -115,16 +120,12 @@ color: var(--primary-text-color);
 
 /*-------------------hero-------------------*/
 .main-container {
-  width: 1600px;
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
 }
 
 .banner {
   background: var(--background-hero-footer);
+  padding-top: 200px;
+  padding-bottom: 94px;
 }
 
 .banner-title {
@@ -135,6 +136,9 @@ color: var(--primary-text-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  width: 696px;
+  padding: 10px 32px;
+  display: block;
 }
 
 .banner-button {
@@ -151,10 +155,18 @@ color: var(--primary-text-color);
   color: var(--white-color);
   background: var(--accent-color);
   cursor: pointer;
-  padding: 10px 32px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
 }
 
-.hero {}
+.hero-container {
+
+}
+
+.hero {
+  margin-top: 94px;
+}
 
 .hero-title {
   font-weight: 700;
@@ -163,6 +175,7 @@ color: var(--primary-text-color);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 
 .hero-text {
@@ -185,15 +198,29 @@ color: var(--primary-text-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    margin-bottom: 50px;
 }
 
 .projects img {}
 
-.team {
-  background: var(--background-our-team);
+.team-container {
 }
 
-.team-item {}
+.projects{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team {
+  background: var(--background-our-team);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.description {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 .team-name {
   font-weight: 500;
@@ -201,6 +228,7 @@ color: var(--primary-text-color);
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -270,8 +298,22 @@ footer {
   background: var(--background-hero-footer);
 }
 
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .word-studio-2 {
   color: var(--white-color);
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.contact-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-mail,
@@ -282,6 +324,11 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-mail:hover,
+.footer-tel:hover {
+  color: var(--accent-color);
 }
 
 .adds {
