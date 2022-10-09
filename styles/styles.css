@@ -250,10 +250,6 @@ color: var(--primary-text-color);
   text-align: center;
 }
 
-.team-list {
-}
-
-
 .team {
   background: var(--background-our-team);
   padding-top: 94px;
@@ -347,7 +343,6 @@ main {
 
 .project-item {
   border: 1px solid #EEEEEE;
-  width: calc((100%-60px)/3);
 }
 
 .portfolio-description {
