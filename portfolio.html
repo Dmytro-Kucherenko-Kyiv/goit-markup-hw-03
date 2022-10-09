@@ -16,25 +16,28 @@
         <title>WebStudio</title>
     </head>
     <body>
-        <header class="header">
-          <div class="conteiner header-conteiner">
-            <nav class="header-navigation">
-                <a class="logo" href="index.html"> Web<span class="word-studio-1">Studio</span></a>
-                    <ul class="header-list">
-                        <li class="header-item"><a class="header-link" href="index.html">Студія</a></li>
-                        <li class="header-item curent"><a class="header-link portfolio" href="portfolio.html">Портфоліо</a></li>
-                        <li class="header-item"><a class="header-link" href="#contacts">Контакти</a></li>
-                    </ul>
-
-                    <ul class="header-link">
-                        <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                    </ul>
-            </nav>
-          </div>
-        </header>
+      <header class="header">
+        <div class="container">
+          <nav class="header-navigation">
+            <a class="logo header-logo" href="index.html"> Web<span class="word-studio-1">Studio</span></a>
+              <ul class="header-list">
+                <li class="header-item"><a class="header-link" href="index.html">Студія</a></li>
+                <li class="header-item"><a class="header-link portfolio" href="portfolio.html">Портфоліо</a></li>
+                <li class="header-item"><a class="header-link" href="#contacts">Контакти</a></li>
+              </ul>
+  
+              <div class="header-contacts">
+                <ul class="header-link">
+                  <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                  <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+              </div>
+          </nav>
+        </div>
+      </header>
         <main>
                 <section class="filter">
+                  <div class="container filter-container">
                 <ul class="filter-list">
                     <li class="filter-item"> 
                         <button class="filter-btn" type="button"> <span class="btn-title">Усі</span></button>
@@ -52,10 +55,12 @@
                         <button class="filter-btn" type="button"> <span class="btn-title">Маркетинг</span></button>        
                     </li>
                 </ul>
+              </div>
             </section>
 
-            <section class="project">         
-                <ul>
+            <section class="project">
+              <div class="container">       
+                <ul class="project-list">
                     <li class="project-list">
                         <a class="project-link" href="">
                             <img src="./img-portfolio/portfolio-1.jpg" alt="Візуальне зображення сайту Технокряк" width="370px" height="294px"> 
@@ -128,10 +133,12 @@
                 </a>
             </li>
         </ul>
+      </div>  
     </section>   
         </main>
         <footer>
-            <a class="logo" href="index.html"> Web<span class="word-studio-2">Studio</span></a>
+          <div class="footer-container container">
+            <a class="logo footer-logo" href="index.html"> Web<span class="word-studio-2">Studio</span></a>
                 <address id="contacts">
                     <ul>
                         <li class="contact-item"><a class="adds" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow" >м. Київ, пр-т Лесі Українки, 26 </a></li>
@@ -139,6 +146,7 @@
                         <li class="contact-item"><a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
+          </div>
         </footer>
     </body>
 </html>
