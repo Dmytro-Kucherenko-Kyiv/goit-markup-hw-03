@@ -341,12 +341,18 @@ main {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /*!!!!*/
+  justify-content: center;
   gap: 30px;
 }
 
-.project-list {
-  /*width: calc((100%-60px) / 3);*/
+.project-item {
+  border: 1px solid #EEEEEE;
+  width: calc((100%-60px)/3);
+}
+
+.portfolio-description {
+  background: var(--white-color);
+  padding: 20px 24px;
 }
 
 .project-name {
