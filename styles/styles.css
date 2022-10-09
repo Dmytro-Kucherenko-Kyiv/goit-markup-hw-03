@@ -334,6 +334,10 @@ main {
   letter-spacing: 0.03em;
 }
 
+.project {
+  padding-bottom: 94px;
+}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
