@@ -1,5 +1,4 @@
-body { 
-  font-family: 'Roboto', sans-serif;
+:root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --white-color:  #FFFFFF;
@@ -7,7 +6,16 @@ body {
   --background-our-team: #F5F4FA;
   --background-hero-footer: #2F303A;
   --accent-color: #2196F3;
+  --button-active: #188CE8;
   --body-color: #F5F5F5;
+  --bottom-color: #ECECEC;
+}
+
+body { 
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--white-color);
 }
 
 p,
@@ -57,11 +65,11 @@ ul {
 }
 
 .header {
-  background: #FFFFFF;
+  background: var(--white-color);
   flex-direction: row;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #ECECEC;
+  border-bottom-color: var(--bottom-color);
 }
 
 .header-navigation {
@@ -74,8 +82,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 .header-logo{
@@ -87,6 +94,10 @@ ul {
   margin: 32px 344px 32px 93px;
   display: flex;
   gap: 50px;
+}
+
+.header-link:hover {
+  color: var(--accent-color)
 }
 
 .studio:visited,
@@ -105,7 +116,6 @@ ul {
 
 .header-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   display:flex;
@@ -117,7 +127,6 @@ ul {
 .mail,
 .tel {
 font-weight: 500;
-font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
@@ -154,8 +163,6 @@ color: var(--primary-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
@@ -165,7 +172,12 @@ color: var(--primary-text-color);
   display: block;
   margin-top: 30px;
   padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.banner-button:hover {
+  background: var(--button-active);
 }
 
 .hero-item {
@@ -185,18 +197,14 @@ color: var(--primary-text-color);
 
 .hero-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 10px;
 }
 
 .hero-text {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
@@ -215,7 +223,6 @@ color: var(--primary-text-color);
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--secondary-text-color);
     padding-bottom: 50px;
 }
@@ -261,7 +268,6 @@ color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 10px;
   padding-left: auto;
@@ -271,7 +277,6 @@ color: var(--primary-text-color);
 .team-position {
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   
 }
@@ -319,7 +324,6 @@ main {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .project {
@@ -350,7 +354,6 @@ main {
 .project-type {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color); 
 }
 
@@ -382,9 +385,7 @@ footer {
 .footer-tel {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -395,8 +396,10 @@ footer {
 
 .adds {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--white-color);
+}
+
+.adds:hover {
+  color: var(--accent-color);
 }
